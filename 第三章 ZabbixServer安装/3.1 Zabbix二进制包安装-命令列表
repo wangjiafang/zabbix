@@ -37,7 +37,7 @@ mysql_secure_installation
 mysql -uroot -p
 create database zabbix character set utf8 collate utf8_bin;
 grant all privileges on zabbix.* to zabbix@localhost identified by 'zabbix@findsec123';
-
+flush privileges;
 导入数据结构
 zcat /usr/share/doc/zabbix-server-mysql*/create.sql.gz | mysql -uzabbix -pzabbix@findsec123  zabbix
 
