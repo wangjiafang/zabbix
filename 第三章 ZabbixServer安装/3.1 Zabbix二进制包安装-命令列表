@@ -51,7 +51,8 @@ systemctl  start zabbix-server.service
 systemctl  status zabbix-server.service
 
 more /var/log/zabbix/zabbix_server.log
-
+配置mysql账号密码
+vim /etc/zabbix/zabbix_server.conf
 
 配置Zabbix frontend
 vim /etc/php.ini
